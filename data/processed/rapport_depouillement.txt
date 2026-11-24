@@ -1,0 +1,200 @@
+RAPPORT DE DÉPOUILLEMENT DES SIX JEUX DE DONNÉES INSTACART
+============================================================
+
+============================================================
+FICHIER : aisles.csv
+============================================================
+Nombre de lignes : 134
+Nombre de colonnes : 2
+
+COLONNES ET TYPES DE DONNÉES :
+- aisle_id : int64
+- aisle : str
+
+VALEURS MANQUANTES :
+Aucune valeur manquante.
+
+STATISTIQUES NUMÉRIQUES :
+- aisle_id : min = 1, max = 134, moyenne = 67.50
+
+APERÇU DES 5 PREMIÈRES LIGNES :
+ aisle_id                      aisle
+        1      prepared soups salads
+        2          specialty cheeses
+        3        energy granola bars
+        4              instant foods
+        5 marinades meat preparation
+
+Remarque : les doublons seront vérifiés lors de l'étape des tests de qualité.
+
+============================================================
+FICHIER : departments.csv
+============================================================
+Nombre de lignes : 21
+Nombre de colonnes : 2
+
+COLONNES ET TYPES DE DONNÉES :
+- department_id : int64
+- department : str
+
+VALEURS MANQUANTES :
+Aucune valeur manquante.
+
+STATISTIQUES NUMÉRIQUES :
+- department_id : min = 1, max = 21, moyenne = 11.00
+
+APERÇU DES 5 PREMIÈRES LIGNES :
+ department_id department
+             1     frozen
+             2      other
+             3     bakery
+             4    produce
+             5    alcohol
+
+Remarque : les doublons seront vérifiés lors de l'étape des tests de qualité.
+
+============================================================
+FICHIER : orders.csv
+============================================================
+Nombre de lignes : 3421083
+Nombre de colonnes : 7
+
+COLONNES ET TYPES DE DONNÉES :
+- order_id : int64
+- user_id : int64
+- eval_set : str
+- order_number : int64
+- order_dow : int64
+- order_hour_of_day : int64
+- days_since_prior_order : float64
+
+VALEURS MANQUANTES :
+- days_since_prior_order : 206209
+
+STATISTIQUES NUMÉRIQUES :
+- order_id : min = 1, max = 3421083, moyenne = 1710542.00
+- user_id : min = 1, max = 206209, moyenne = 102978.21
+- order_number : min = 1, max = 100, moyenne = 17.15
+- order_dow : min = 0, max = 6, moyenne = 2.78
+- order_hour_of_day : min = 0, max = 23, moyenne = 13.45
+- days_since_prior_order : min = 0.0, max = 30.0, moyenne = 11.11
+
+APERÇU DES 5 PREMIÈRES LIGNES :
+ order_id  user_id eval_set  order_number  order_dow  order_hour_of_day  days_since_prior_order
+  2539329        1    prior             1          2                  8                     NaN
+  2398795        1    prior             2          3                  7                    15.0
+   473747        1    prior             3          3                 12                    21.0
+  2254736        1    prior             4          4                  7                    29.0
+   431534        1    prior             5          4                 15                    28.0
+
+Remarque : les doublons seront vérifiés lors de l'étape des tests de qualité.
+
+============================================================
+FICHIER : order_products__prior.csv
+============================================================
+Nombre de lignes : 32434489
+Nombre de colonnes : 4
+
+COLONNES ET TYPES DE DONNÉES :
+- order_id : int64
+- product_id : int64
+- add_to_cart_order : int64
+- reordered : int64
+
+VALEURS MANQUANTES :
+Aucune valeur manquante.
+
+STATISTIQUES NUMÉRIQUES :
+- order_id : min = 2, max = 3421083, moyenne = 1710748.52
+- product_id : min = 1, max = 49688, moyenne = 25576.34
+- add_to_cart_order : min = 1, max = 145, moyenne = 8.35
+- reordered : min = 0, max = 1, moyenne = 0.59
+
+APERÇU DES 5 PREMIÈRES LIGNES :
+ order_id  product_id  add_to_cart_order  reordered
+        2       33120                  1          1
+        2       28985                  2          1
+        2        9327                  3          0
+        2       45918                  4          1
+        2       30035                  5          0
+
+Remarque : les doublons seront vérifiés lors de l'étape des tests de qualité.
+
+============================================================
+FICHIER : order_products__train.csv
+============================================================
+Nombre de lignes : 1384617
+Nombre de colonnes : 4
+
+COLONNES ET TYPES DE DONNÉES :
+- order_id : int64
+- product_id : int64
+- add_to_cart_order : int64
+- reordered : int64
+
+VALEURS MANQUANTES :
+Aucune valeur manquante.
+
+STATISTIQUES NUMÉRIQUES :
+- order_id : min = 1, max = 3421070, moyenne = 1706297.62
+- product_id : min = 1, max = 49688, moyenne = 25556.24
+- add_to_cart_order : min = 1, max = 80, moyenne = 8.76
+- reordered : min = 0, max = 1, moyenne = 0.60
+
+APERÇU DES 5 PREMIÈRES LIGNES :
+ order_id  product_id  add_to_cart_order  reordered
+        1       49302                  1          1
+        1       11109                  2          1
+        1       10246                  3          0
+        1       49683                  4          0
+        1       43633                  5          1
+
+Remarque : les doublons seront vérifiés lors de l'étape des tests de qualité.
+
+============================================================
+FICHIER : products.csv
+============================================================
+Nombre de lignes : 49688
+Nombre de colonnes : 4
+
+COLONNES ET TYPES DE DONNÉES :
+- product_id : int64
+- product_name : str
+- aisle_id : int64
+- department_id : int64
+
+VALEURS MANQUANTES :
+Aucune valeur manquante.
+
+STATISTIQUES NUMÉRIQUES :
+- product_id : min = 1, max = 49688, moyenne = 24844.50
+- aisle_id : min = 1, max = 134, moyenne = 67.77
+- department_id : min = 1, max = 21, moyenne = 11.73
+
+APERÇU DES 5 PREMIÈRES LIGNES :
+ product_id                                                      product_name  aisle_id  department_id
+          1                                        Chocolate Sandwich Cookies        61             19
+          2                                                  All-Seasons Salt       104             13
+          3                              Robust Golden Unsweetened Oolong Tea        94              7
+          4 Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce        38              1
+          5                                         Green Chile Anytime Sauce         5             13
+
+Remarque : les doublons seront vérifiés lors de l'étape des tests de qualité.
+
+
+============================================================
+INDICATEURS COMPLEMENTAIRES
+============================================================
+
+Nombre de clients distincts : 206209
+
+Répartition des commandes :
+- prior : 3214874
+- test : 75000
+- train : 131209
+
+order_products__prior.csv
+Nombre de produits distincts : 49677
+
+order_products__train.csv
+Nombre de produits distincts : 39123

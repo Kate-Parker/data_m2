@@ -1,0 +1,82 @@
+RAPPORT DE QUALITÉ, NETTOYAGE ET TESTS
+============================================================
+Les fichiers data/raw/ ont été conservés sans modification.
+Les copies préparées se trouvent dans : C:\Users\mouft\Desktop\data\data_m2\data\processed
+
+CORRECTIONS AUTOMATIQUES
+------------------------------------------------------------
+Seuls les espaces en début/fin des champs texte ont été retirés et les champs texte composés d'espaces ont été normalisés.
+Aucune ligne n'a été supprimée et aucune valeur numérique ou manquante n'a été imputée automatiquement.
+
+products.csv
+- product_name : 4 espace(s) superflu(s) retiré(s), 0 chaîne(s) vide(s) normalisée(s).
+
+RÉSULTATS DES TESTS
+------------------------------------------------------------
+[OK] aisles.csv — structure : 134 lignes; colonnes attendues présentes.
+[OK] aisles.csv — valeurs manquantes (aisle_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] aisles.csv — valeurs manquantes (aisle) : 0 manquantes; 0 attendues sur la première commande.
+[OK] aisles.csv — unicité de la clé : 0 clé(s) dupliquée(s).
+[OK] aisles.csv — plage de aisle_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] departments.csv — structure : 21 lignes; colonnes attendues présentes.
+[OK] departments.csv — valeurs manquantes (department_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] departments.csv — valeurs manquantes (department) : 0 manquantes; 0 attendues sur la première commande.
+[OK] departments.csv — unicité de la clé : 0 clé(s) dupliquée(s).
+[OK] departments.csv — plage de department_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] products.csv — structure : 49,688 lignes; colonnes attendues présentes.
+[OK] products.csv — valeurs manquantes (product_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] products.csv — valeurs manquantes (product_name) : 0 manquantes; 0 attendues sur la première commande.
+[OK] products.csv — valeurs manquantes (aisle_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] products.csv — valeurs manquantes (department_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] products.csv — unicité de la clé : 0 clé(s) dupliquée(s).
+[OK] products.csv — plage de product_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] products.csv — plage de aisle_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] products.csv — plage de department_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] products.csv — référence aisle_id : 0 identifiant(s) absent(s) de la table de référence.
+[OK] products.csv — référence department_id : 0 identifiant(s) absent(s) de la table de référence.
+[OK] orders.csv — structure : 3,421,083 lignes; colonnes attendues présentes.
+[OK] orders.csv — valeurs manquantes (order_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] orders.csv — valeurs manquantes (user_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] orders.csv — valeurs manquantes (eval_set) : 0 manquantes; 0 attendues sur la première commande.
+[OK] orders.csv — valeurs manquantes (order_number) : 0 manquantes; 0 attendues sur la première commande.
+[OK] orders.csv — valeurs manquantes (order_dow) : 0 manquantes; 0 attendues sur la première commande.
+[OK] orders.csv — valeurs manquantes (order_hour_of_day) : 0 manquantes; 0 attendues sur la première commande.
+[OK] orders.csv — valeurs manquantes (days_since_prior_order) : 206,209 manquantes; 206,209 attendues sur la première commande.
+[OK] orders.csv — unicité de la clé : 0 clé(s) dupliquée(s).
+[OK] orders.csv — plage de order_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] orders.csv — plage de user_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] orders.csv — plage de order_number : 0 valeur(s) invalide(s) ou hors plage.
+[OK] orders.csv — plage de order_dow : 0 valeur(s) invalide(s) ou hors plage.
+[OK] orders.csv — plage de order_hour_of_day : 0 valeur(s) invalide(s) ou hors plage.
+[OK] orders.csv — plage de days_since_prior_order : 0 valeur(s) invalide(s) ou hors plage.
+[OK] orders.csv — délai de première commande : 206,209 délai(s) manquant(s) attendu(s) sur la première commande; 0 manquant(s) sur une commande ultérieure.
+[OK] order_products__prior.csv — structure : 32,434,489 lignes; colonnes attendues présentes.
+[OK] order_products__prior.csv — valeurs manquantes (order_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__prior.csv — valeurs manquantes (product_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__prior.csv — valeurs manquantes (add_to_cart_order) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__prior.csv — valeurs manquantes (reordered) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__prior.csv — unicité de la clé : 0 clé(s) dupliquée(s).
+[OK] order_products__prior.csv — plage de order_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__prior.csv — plage de product_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__prior.csv — plage de add_to_cart_order : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__prior.csv — plage de reordered : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__prior.csv — référence order_id : 0 identifiant(s) absent(s) de la table de référence.
+[OK] order_products__prior.csv — référence product_id : 0 identifiant(s) absent(s) de la table de référence.
+[OK] order_products__train.csv — structure : 1,384,617 lignes; colonnes attendues présentes.
+[OK] order_products__train.csv — valeurs manquantes (order_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__train.csv — valeurs manquantes (product_id) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__train.csv — valeurs manquantes (add_to_cart_order) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__train.csv — valeurs manquantes (reordered) : 0 manquantes; 0 attendues sur la première commande.
+[OK] order_products__train.csv — unicité de la clé : 0 clé(s) dupliquée(s).
+[OK] order_products__train.csv — plage de order_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__train.csv — plage de product_id : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__train.csv — plage de add_to_cart_order : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__train.csv — plage de reordered : 0 valeur(s) invalide(s) ou hors plage.
+[OK] order_products__train.csv — référence order_id : 0 identifiant(s) absent(s) de la table de référence.
+[OK] order_products__train.csv — référence product_id : 0 identifiant(s) absent(s) de la table de référence.
+
+SYNTHÈSE
+------------------------------------------------------------
+Tests en échec : 0
+Avertissements : 0
+Les contrôles définis sont tous satisfaits.
